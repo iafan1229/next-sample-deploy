@@ -1,6 +1,6 @@
 import Chart2 from '@/component/Chart2';
 
-export const bitCoinExample = {
+const bitCoinExample = {
 	id: 'bitcoin',
 	symbol: 'btc',
 	name: 'Bitcoin',
