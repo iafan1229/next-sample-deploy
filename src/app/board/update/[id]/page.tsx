@@ -25,7 +25,7 @@ export default function Update({ params }: { params: { id: string } }) {
 					// const title = evt.target.title.value;
 					// const body = evt.target.body.value;
 					const resp = await fetch(
-						`process.env.NEXT_PUBLIC_API_URL/posts/${id}`,
+						`${process.env.NEXT_PUBLIC_API_URL}/posts/${id}`,
 						{
 							method: 'PATCH',
 							headers: {
