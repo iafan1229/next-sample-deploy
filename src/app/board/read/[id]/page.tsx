@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default async function Read(props: { params: { id: string } }) {
 	const id = props.params.id;
 
-	const resp = await fetch(`http://localhost:9999/posts/${id}`, {
+	const resp = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/posts/${id}`, {
 		cache: 'no-cache',
 	});
 	const topic = await resp.json();
